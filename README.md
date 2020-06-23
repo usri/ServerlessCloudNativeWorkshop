@@ -5,9 +5,19 @@ In this work shop we will build a serverless cloud native application. This tuto
 
 
 # What we are building
-We will be building a simple Single Page App (SAP) that can manage a bicycle shop. We will be able to edit quantities and add new bikes.
+We will be building a simple Single Page App (SPA) that can manage a bicycle shop. We will be able to edit quantities and add new bikes.
 
 ![Image](https://github.com/usri/ServerlessCloudNativeWorkshop/blob/master/Docs/screen.png?raw=true)
+
+# Review the Power Point first
+[Link](https://github.com/usri/ServerlessCloudNativeWorkshop/blob/master/Creating%20a%20serverless%20cloud%20native%20app%20on%20Azure.pptx?raw=true)
+
+# Start with 00 Backend
+[Link](https://github.com/usri/ServerlessCloudNativeWorkshop/blob/master/00-Setup%20Backend.docx?raw=true)
+
+# Continue to 01 Frontend
+[Link](https://github.com/usri/ServerlessCloudNativeWorkshop/blob/master/01-Setup%20Frontend.docx?raw=true)
+
 
 
 

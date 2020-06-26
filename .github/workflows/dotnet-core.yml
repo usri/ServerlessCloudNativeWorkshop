@@ -1,4 +1,4 @@
-name: Deploy DotNet project to Azure Function App
+name: Build DotNet project for Azure Function App
 
 on:
   [push]

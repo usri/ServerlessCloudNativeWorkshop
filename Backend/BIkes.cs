@@ -23,7 +23,7 @@ namespace Company.Function
             Models.Bike[] abk;
             try
             {
-                abk = await DAL.GetAllBikesAsync();
+                abk                                                     = await DAL.GetAllBikesAsync();
             }
             catch (Exception exError)
             {

@@ -24,12 +24,12 @@ namespace Company.Function
             {
                 case "GET":
                     {
-                        Models.Bike bk = new Models.Bike();
+                        Models.Bike bk                                  = new Models.Bike();
                         try
                         {
-                            string strID = req.Query["ID"];
-                            string strPartition = req.Query["Partition"];
-                            bk = await DAL.GetBikeByIDAsync(strID, strPartition);
+                            string strID                                = req.Query["ID"];
+                            string strPartition                         = req.Query["Partition"];
+                            bk                                          = await DAL.GetBikeByIDAsync(strID, strPartition);
                         }
                         catch (Exception exError)
                         {
@@ -42,12 +42,12 @@ namespace Company.Function
                     {
                         try
                         {
-                            string strBody = await new StreamReader(req.Body).ReadToEndAsync();
-                            Models.Bike bk = JsonConvert.DeserializeObject<Models.Bike>(strBody);
+                            string strBody                              = await new StreamReader(req.Body).ReadToEndAsync();
+                            Models.Bike bk                              = JsonConvert.DeserializeObject<Models.Bike>(strBody);
 
                             if (bk.ID == null || bk.ID == string.Empty)
                             {
-                                bk.ID = Guid.NewGuid().ToString();
+                                bk.ID                                   = Guid.NewGuid().ToString();
                                 await DAL.CreateBikeAsync(bk);
                             }
                             else

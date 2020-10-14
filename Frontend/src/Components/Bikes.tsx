@@ -168,6 +168,8 @@ export default class Bikes extends React.Component<{  }, IBikes>
                         closeButtonAriaLabel="Close">
                         <Stack>
 
+                        <TextField style={pnlStyle} label="Crap" onChange={this.AddMakeChange.bind(this)}/>
+
                             <TextField style={pnlStyle} label="Make" onChange={this.AddMakeChange.bind(this)}/>
                             <TextField style={pnlStyle} label="Model" onChange={this.AddModelChange.bind(this)}/>
 
